@@ -1,0 +1,525 @@
+@font-face {
+  font-family: myFont;
+  src: url(/case/font1/PassionsConflict-Regular.ttf);
+}
+@font-face {
+  font-family: myFont2;
+  src: url(/case/font1/DancingScript-VariableFont_wght.ttf);
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: -100;
+}
+
+.nav-scroll .header {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+  border-bottom: 1px solid #9b9999;
+  display: flex;
+  font-size: 1rem;
+  position: fixed;
+  top: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav-scroll .header .img {
+  width: 10%;
+  height: 100px;
+  margin-left: 3%;
+}
+.nav-scroll .header .img img {
+  width: 50%;
+  height: 70%;
+}
+.nav-scroll .header .find {
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+.nav-scroll .header .find #infor {
+  width: 90%;
+  height: 40px;
+  background-color: rgba(201, 201, 201, 0);
+  border: 2px solid aqua;
+  border-radius: 70px;
+  transition: all 1.5s ease-in-out;
+  padding-left: 50px;
+}
+.nav-scroll .header .find ::-moz-placeholder {
+  color: #000000;
+}
+.nav-scroll .header .find :-ms-input-placeholder {
+  color: #000000;
+}
+.nav-scroll .header .find ::placeholder {
+  color: #000000;
+}
+.nav-scroll .header .find button {
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  left: -7%;
+  top: 1px;
+  border: 0;
+}
+.nav-scroll .header .find button i {
+  color: #000000;
+  font-size: 1.1rem;
+}
+.nav-scroll .header .form {
+  margin-top: 1%;
+}
+.nav-scroll .header .form button {
+  width: 110px;
+  height: 40px;
+  background-color: rgba(142, 37, 37, 0);
+  border: 1px solid aqua;
+  border-radius: 60px;
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+.nav-scroll .header .form button:first-child {
+  margin-right: 20px;
+}
+.nav-scroll .header .form button:hover {
+  background-color: rgb(230, 123, 24);
+  border: 1px solid rgb(230, 123, 24);
+  transition: all 0.5s;
+  color: aqua;
+}
+.nav-scroll .header .form button:active {
+  background-color: aqua;
+  border: 1px solid rgb(230, 123, 24);
+  transition: all 0.3s;
+}
+.nav-scroll .nav {
+  height: 700px;
+  width: 70px;
+  margin-top: 50px;
+  position: fixed;
+  top: 50px;
+  z-index: 100;
+}
+.nav-scroll .nav ul {
+  list-style-type: none;
+  padding-left: 3px;
+}
+.nav-scroll .nav ul .list {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  height: 100px;
+}
+.nav-scroll .nav ul .list a {
+  text-decoration: none;
+  color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+.nav-scroll .nav ul .list a .icon i {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+.nav-scroll .nav ul .list a .title {
+  text-align: center;
+  font-size: 1.3rem;
+  position: relative;
+  top: -20px;
+  color: #000000;
+}
+.nav-scroll .nav ul .list:first-child {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.nav-scroll .nav ul .list:hover {
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.container1 {
+  margin-top: 120px;
+  width: 70%;
+  margin-left: 15%;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.container1 #link a {
+  text-decoration: none;
+  color: #000000;
+}
+.container1 #link a:hover {
+  color: orange;
+}
+.container1 h1 {
+  font-size: 3rem;
+}
+.container1 .date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.container1 .date button {
+  width: 130px;
+  border: 0;
+  background-color: rgb(17, 190, 104);
+  color: white;
+  height: 40px;
+}
+.container1 .date button:hover {
+  background-color: rgb(24, 128, 76);
+}
+.container1 .body {
+  margin-top: 30px;
+}
+.container1 .body img {
+  width: 80%;
+  margin-left: 10%;
+}
+.container1 .body #time {
+  text-align: center;
+}
+
+.content2 {
+  margin-top: 50px;
+}
+.content2 #title {
+  margin-left: 15%;
+  font-size: 1.5rem;
+}
+
+.container2 {
+  width: 80%;
+  margin-left: 10%;
+  height: 390px;
+  background-color: #1c3f60;
+  position: relative;
+  border-radius: 5px;
+}
+.container2 h1 {
+  font-family: myFont2;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+.container2 .content4 {
+  width: 95%;
+  margin: 20px 2.5%;
+  height: 400px;
+}
+.container2 .content4 a {
+  text-decoration: none;
+  color: #000000;
+}
+.container2 .content4 a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.container2 .content4 .course {
+  width: 96%;
+  margin-left: 0.6%;
+  margin-top: 40px;
+}
+.container2 .content4 .course .card {
+  width: 23%;
+  height: 300px;
+  border-radius: 5px;
+}
+.container2 .content4 .course .card .img {
+  width: 100%;
+  height: 50%;
+}
+.container2 .content4 .course .card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.container2 .content4 .course .card .item-content h1 {
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container2 .content4 .course .card .item-content p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container2 .content4 .course .card .item-content span {
+  color: orange;
+  font-weight: bold;
+}
+.container2 .content4 .course .card .item-content button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(231, 138, 26);
+  border: 1px solid rgb(231, 138, 26);
+  border-radius: 10px;
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  margin-left: 27%;
+  margin-top: 3%;
+  position: relative;
+  top: 14px;
+  z-index: 1008888;
+}
+.container2 .content4 .course .card .item-content button:hover {
+  background-color: white;
+  border: 2px solid rgb(231, 138, 26);
+  transition: all 0.5s;
+  color: rgb(231, 138, 26);
+}
+.container2 .content4 .course .card .item-content button:active {
+  background-color: rgb(231, 138, 26);
+  border: 1px solid rgb(231, 138, 26);
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.container2 .content4 .course .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container2 .content4 .swiper-button-next {
+  position: relative;
+  top: -250px;
+  left: 97%;
+  color: rgba(0, 0, 0, 0);
+}
+.container2 .content4 .swiper-button-prev {
+  position: relative;
+  top: -250px;
+  left: 1%;
+  color: rgba(0, 0, 0, 0);
+}
+.container2 h1:first-child {
+  color: black;
+}
+
+.comment {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+.comment #title2 {
+  font-size: 1.7rem;
+}
+.comment .form textarea {
+  border: 1px solid rgb(224, 103, 103);
+}
+.comment .form button {
+  border: 0;
+  background-color: #08dc13;
+  width: 140px;
+  height: 50px;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 50px;
+}
+.comment .form button:hover {
+  background-color: #1c9622;
+}
+.comment .comment-item {
+  display: flex;
+}
+.comment .comment-item .img {
+  width: 90px;
+  height: 90px;
+  background-color: rgb(123, 75, 171);
+  border-radius: 70px;
+  position: relative;
+}
+.comment .comment-item .img img {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 70px;
+}
+.comment .comment-item .content {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.comment .comment-item .content p {
+  margin: 0;
+  padding: 0;
+}
+.comment .comment-item .content #name {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.comment .reaction {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -15px;
+}
+.comment .reaction .react {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.comment .reaction .react .content2 {
+  display: flex;
+}
+.comment .reaction .react .content2 i {
+  font-size: 1.4rem;
+  color: #00bcd4;
+  margin-right: 10px;
+}
+.comment .reaction .react .content2 p {
+  position: relative;
+  top: -5px;
+  font-size: 1.3rem;
+}
+.comment .reaction #tg {
+  position: relative;
+  top: 45px;
+  font-size: 1.2rem;
+}
+
+.contactx {
+  position: relative;
+  min-height: 100vh;
+  padding: 70px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/case/img/download.jfif");
+  background-size: cover;
+  margin-top: 50PX;
+}
+
+.contactx .contentx {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contactx .contentx h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.contactx .contentx p {
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.containerx {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.containerx .contactInfox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerx .contactInfox .boxx {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.containerx .contactInfox .boxx .iconx {
+  min-width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.containerx .contactInfox .boxx .textx {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #F1F1F1;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.containerx .contactInfox .boxx .textx h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.containerx .contactInfox .boxx .textx p {
+  font-size: 18px;
+}
+
+.contactFormx {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactFormx h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactFormx .inputBoxx {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactFormx .inputBoxx input,
+.contactFormx .inputBoxx textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactFormx .inputBoxx span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactFormx .inputBoxx input:focus ~ span,
+.contactFormx .inputBoxx input:valid ~ span,
+.contactFormx .inputBoxx textarea:focus ~ span,
+.contactFormx .inputBoxx textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactFormx .inputBoxx input[type=submit] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}/*# sourceMappingURL=docbao.css.map */

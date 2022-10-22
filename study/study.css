@@ -1,0 +1,563 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-scroll .header {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+  border-bottom: 1px solid #9b9999;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav-scroll .header .img {
+  width: 10%;
+  height: 100px;
+  margin-left: 3%;
+}
+.nav-scroll .header .img img {
+  width: 50%;
+  height: 70%;
+}
+.nav-scroll .header .find {
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+.nav-scroll .header .find #infor {
+  width: 90%;
+  height: 40px;
+  background-color: rgba(201, 201, 201, 0);
+  border: 2px solid aqua;
+  border-radius: 70px;
+  transition: all 1.5s ease-in-out;
+  padding-left: 50px;
+}
+.nav-scroll .header .find ::-moz-placeholder {
+  color: #000000;
+}
+.nav-scroll .header .find :-ms-input-placeholder {
+  color: #000000;
+}
+.nav-scroll .header .find ::placeholder {
+  color: #000000;
+}
+.nav-scroll .header .find button {
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  left: -7%;
+  top: 1px;
+  border: 0;
+}
+.nav-scroll .header .find button i {
+  color: #000000;
+  font-size: 1.1rem;
+}
+.nav-scroll .header .form {
+  margin-top: 1%;
+}
+.nav-scroll .header .form button {
+  width: 110px;
+  height: 40px;
+  background-color: rgba(142, 37, 37, 0);
+  border: 1px solid aqua;
+  border-radius: 60px;
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+.nav-scroll .header .form button:first-child {
+  margin-right: 20px;
+}
+.nav-scroll .header .form button:hover {
+  background-color: rgb(230, 123, 24);
+  border: 1px solid rgb(230, 123, 24);
+  transition: all 0.5s;
+  color: aqua;
+}
+.nav-scroll .header .form button:active {
+  background-color: aqua;
+  border: 1px solid rgb(230, 123, 24);
+  transition: all 0.3s;
+}
+
+.banner {
+  height: 290px;
+  width: 100%;
+  padding-top: 30px;
+  background-color: #0B3955;
+  margin-top: 80px;
+  color: white;
+}
+.banner .content {
+  width: 50%;
+  margin-left: 10%;
+}
+.banner .content #content {
+  text-align: justify;
+}
+.banner .item {
+  display: flex;
+  justify-content: space-between;
+}
+.banner .name {
+  display: flex;
+}
+.banner .name img {
+  width: 52px;
+  height: 50px;
+  border-radius: 50px;
+}
+.banner .name p {
+  font-size: 1.2rem;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.banner .danhgia {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5px;
+}
+.banner .danhgia .icon {
+  color: gold;
+}
+.banner .hocvien i {
+  margin-left: 40%;
+}
+
+.price {
+  width: 340px;
+  height: 450px;
+  background-color: white;
+  padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  top: 15vh;
+  left: 62vw;
+  border-radius: 10px;
+}
+.price h1 {
+  font-weight: 700;
+  color: #FB5631;
+}
+.price h1 span {
+  color: #FB5631;
+  position: relative;
+  font-size: 1.3rem;
+  top: -20px;
+}
+.price #gia {
+  text-decoration: none;
+  position: relative;
+  top: -55px;
+  left: 170px;
+}
+.price #gia span#m {
+  text-decoration: line-through;
+}
+.price #gia span#d {
+  font-size: 0.7rem;
+  position: relative;
+  top: -8px;
+}
+.price #button1 {
+  height: 50px;
+  border: 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: white;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #f25b58;
+  position: relative;
+  top: -20px;
+}
+.price #button1:hover {
+  background-color: #e03431;
+}
+.price .item {
+  display: flex;
+}
+.price .item i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.price .item p {
+  position: relative;
+  top: -3px;
+}
+.price #button {
+  height: 50px;
+  border: 2px solid #f25b58;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #f25b58;
+  width: 300px;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+}
+.price #button:hover {
+  background-color: #e03431;
+  color: white;
+}
+
+.video {
+  width: 50%;
+  height: 420px;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  width: 50%;
+  margin-left: 10%;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.nav ul li {
+  text-decoration: none;
+  margin: 20px 70px 0 0;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+.nav ul li:hover {
+  border-bottom: 3px solid rgb(123, 132, 132);
+}
+
+.content1 {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.content1 .item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content1 .item .content-item {
+  display: flex;
+  width: 45%;
+}
+.content1 .item img {
+  width: 20px;
+  height: 20px;
+}
+
+.content2 {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.content3 {
+  width: 50%;
+  margin: 0 0 0 10%;
+  margin-top: 50px;
+}
+.content3 li {
+  margin: 12px 0;
+  list-style: none;
+}
+
+.content5 {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.content5 .item {
+  display: flex;
+}
+.content5 .img {
+  width: 30%;
+  margin-left: 2%;
+}
+.content5 .img img {
+  width: 120px;
+  border-radius: 120px;
+  margin-left: 8%;
+}
+.content5 .img .hv {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+}
+.content5 .img .hv i {
+  margin-right: 10px;
+}
+.content5 .img .hv p {
+  position: relative;
+  top: -4px;
+}
+.content5 .img .hv:last-child {
+  margin: 0;
+}
+.content5 .item-content {
+  width: 75%;
+}
+.content5 .item-content p {
+  text-align: justify;
+}
+
+.container1 {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 40px;
+  height: 440px;
+  background-color: #1c3f60;
+  border-radius: 5px;
+}
+.container1 h1 {
+  font-family: myFont2;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+.container1 .content4 {
+  width: 95%;
+  margin: 0 2.5%;
+  height: 380px;
+}
+.container1 .content4 a {
+  text-decoration: none;
+  color: #000000;
+}
+.container1 .content4 a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.container1 .content4 .course {
+  width: 96%;
+  margin: 0%;
+}
+.container1 .content4 .course .card {
+  width: 20%;
+  height: 300px;
+  border-radius: 5px;
+}
+.container1 .content4 .course .card .img {
+  width: 100%;
+  height: 50%;
+}
+.container1 .content4 .course .card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.container1 .content4 .course .card .item-content h1 {
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container1 .content4 .course .card .item-content p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.container1 .content4 .course .card .item-content span {
+  color: orange;
+  font-weight: bold;
+}
+.container1 .content4 .course .card .item-content button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(231, 138, 26);
+  border: 1px solid rgb(231, 138, 26);
+  border-radius: 10px;
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  margin-left: 27%;
+  margin-top: 3%;
+  position: relative;
+  top: 14px;
+  z-index: 1008888;
+}
+.container1 .content4 .course .card .item-content button:hover {
+  background-color: white;
+  border: 2px solid rgb(231, 138, 26);
+  transition: all 0.5s;
+  color: rgb(231, 138, 26);
+}
+.container1 .content4 .course .card .item-content button:active {
+  background-color: rgb(231, 138, 26);
+  border: 1px solid rgb(231, 138, 26);
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.container1 .content4 .course .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container1 .content4 .swiper-button-next {
+  position: relative;
+  top: -250px;
+  left: 97%;
+  color: rgba(0, 0, 0, 0);
+}
+.container1 .content4 .swiper-button-prev {
+  position: relative;
+  top: -250px;
+  left: 1%;
+  color: rgba(0, 0, 0, 0);
+}
+.container1 #h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contactx {
+  position: relative;
+  min-height: 100vh;
+  padding: 70px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(/case/img/download.jfif);
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.contactx .contentx {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contactx .contentx h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.contactx .contentx p {
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.containerx {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.containerx .contactInfox {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerx .contactInfox .boxx {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.containerx .contactInfox .boxx .iconx {
+  min-width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.containerx .contactInfox .boxx .textx {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #F1F1F1;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.containerx .contactInfox .boxx .textx h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.containerx .contactInfox .boxx .textx p {
+  font-size: 18px;
+}
+
+.contactFormx {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactFormx h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactFormx .inputBoxx {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactFormx .inputBoxx input,
+.contactFormx .inputBoxx textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactFormx .inputBoxx span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactFormx .inputBoxx input:focus ~ span,
+.contactFormx .inputBoxx input:valid ~ span,
+.contactFormx .inputBoxx textarea:focus ~ span,
+.contactFormx .inputBoxx textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactFormx .inputBoxx input[type=submit] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}/*# sourceMappingURL=study.css.map */

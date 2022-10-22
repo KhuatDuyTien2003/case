@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./study.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="nav-scroll" id="check">
+        <div class="header">
+            <div class="img">
+                <a href="/case/index.html">
+                    <img src="/case/img/logo_ITC.png" alt="">
+                </a>
+
+            </div>
+            <div class="find">
+                <input type="text" name="" id="infor" placeholder="Mời nhập thông tin muốn tìm kiếm...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="form">
+                <button onclick="nextPage2()" onclick="signIn()">Đăng ký</button>
+                <button onclick="nextPage()" onclick="signIn()">Đăng nhập</button>
+            </div>
+        </div>
+        <!-- <div class="nav">
+                    <ul>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="title">Home</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#study">
+                                <span class="icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></span>
+                                <span class="title">Study</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon"><i class="fa-solid fa-calendar-check"></i></span>
+                                <span class="title">Even</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#content3">
+                                <span class="icon"><i class="fa-solid fa-blog"></i></span>
+                                <span class="title">Blog</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon"><i class="fa-solid fa-arrows-left-right"></i></span>
+                                <span class="title">horizontal</span>
+        
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+    </div>
+
+    <div class="banner">
+        <div class="content">
+            <p><a href="/case/index.html">Trang chủ</a>>> <a href="#">Khóa học lập trình</a></p>
+            <h1>Học lập trình C/C++ TỪ A - Z</h1>
+            <p id="content">Khóa học lập trình C/C++ Online bạn trang bị cho bạn kỹ năng lập trình ngôn ngữ C/ C++ từ cơ
+                bản đến nâng
+                cao, được minh họa thông qua các bài tập thực hành đơn giản. Đồng thời giúp bạn nắm được kiến thức nền
+                tảng
+                học C++/C để bạn tiếp tục học thêm nhiều ngôn ngữ khác.</p>
+            <div class="item">
+                <div class="name">
+                    <img src="/case/img/duc.png" alt="">
+                    <p>Trần Thành Đạt</p>
+                </div>
+                <div class="danhgia">
+                    <div class="icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p>1000 đánh giá</p>
+                </div>
+                <div class="hocvien">
+                    <i class="fa-solid fa-users"></i>
+                    <p>100000 học viên</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="price">
+        <h1>200,000<span>đ</span></h1>
+        <p id="gia"><span id="m">400,000</span><span id="d">đ</span>(50% OFF)</p>
+        <button id="button1">Đăng ký ngay</button>
+        <div class="item">
+            <i class="fa-solid fa-clock"></i>
+            <p>Thời lượng: <span style="font-weight: bold;">100 giờ 10 phút</span></p>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-circle-play"></i>
+            <p>Giáo trình: <span style="font-weight: bold;">150 bài giảng</span></p>
+        </div>
+        <div class="item">
+            <i class="fa-sharp fa-solid fa-clock-rotate-left"></i>
+            <p>Sở hữu khóa học trọn đời</p>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-certificate"></i>
+            <p>Cấp chứng chỉ khi hoàn thành</p>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-circle-play"></i>
+            <p>Giáo trình: <span style="font-weight: bold;">150 bài giảng</span></p>
+        </div>
+        <button id="button">Đăng ký tư vấn</button>
+    </div>
+
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/KsVqBIWtRec" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Nội dung khóa học</a> </li>
+            <li><a href="#">Thông tin giảng viên</a> </li>
+            <li><a href="#">Đánh giá</a> </li>
+        </ul>
+    </div>
+
+
+    <!-- HỌC ĐC J -->
+    <div class="content1">
+        <h4>Bạn học được gì</h4>
+        <div class="item">
+            <div class="content-item">
+                <img src="/case/img/tichxanh-removebg-preview.png" alt="">
+                <p>Nhanh chóng thành thạo ngôn ngữ C/C++ với các kiểu dữ liệu mảng, con trỏ, kiểu cấu trúc... những kiến
+                    thức không thể không biết khi học C/C++</p>
+            </div>
+            <div class="content-item">
+                <img src="/case/img/tichxanh-removebg-preview.png" alt="">
+                <p>Sử dụng thư viện STL thành thạo cũng như kĩ thuật lập trình hàm.</p>
+            </div>
+
+            <div class="content-item">
+                <img src="/case/img/tichxanh-removebg-preview.png" alt="">
+                <p>Có đủ kiến thức nền tảng cơ bản về C/C++ để bạn tiếp tục tự học thêm ngôn ngữ này hoặc học thêm một
+                    ngôn ngữ lập trình mới khác</p>
+            </div>
+            <div class="content-item">
+                <img src="/case/img/tichxanh-removebg-preview.png" alt="">
+                <p>Thiết kế, xây dựng, thử nghiệm và gỡ lỗi (design, implement, test, and debug).</p>
+            </div>
+            <div class="content-item">
+                <img src="/case/img/tichxanh-removebg-preview.png" alt="">
+                <p>Khóa học lập trình C++ online sẽ giúp bạn có kiến thức nền tảng vững chắc về ngôn ngữ C/C++ qua kiến
+                    thức lý thuyết và bài tập thực hành</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- GIỚI THIỆU KHÓA HỌC -->
+    <div class="content2">
+        <h5>Giới thiệu khóa học</h5>
+        <hr>
+        <p>Như các bạn cũng đã biết, C++ là một trong những ngôn ngữ lập trình đã có từ rất lâu đời. Ngôn ngữ C++ không
+            phải là ngôn ngữ hướng đối tượng hoàn toàn mà là ngôn ngữ “đa hướng”. Vì C++ hỗ trợ cả lập trình hướng hành
+            động và lập trình hướng đối tượng. Nó là một trong những ngôn ngữ phổ biến để viết các ứng dụng máy tính –
+            và ngôn ngữ thông dụng nhất để lập trình games. </p>
+        <p>Khóa học lập trình C online không phải là chuyện mà bạn có thể thực hiện trong một hay ngày mà nó là cả một
+            quá trình đòi hỏi sự kiên nhẫn, tư duy từ người học. Chính vì thế, nếu bạn đang muốn tìm kiếm một khóa học c
+            online chất lượng dành cho người mới bắt đầu hoặc người đã học lập trình đang muốn nâng cao tay nghề thì
+            nhất định không nên bỏ lỡ khóa học “Học lập trình C/C++ từ A-Z” của giảng viên Dương Tích Đạt có trên Unica.
+
+        </p>
+        <p>
+            Khóa học sẽ trang bị cho học viên các kỹ năng lập trình được minh hoạ cụ thể bằng ngôn ngữ lập trình C/C++
+            từ cơ bản đến nâng cao. Khóa học bao gồm các kỹ thuật lập trình trên các kiểu dữ liệu cơ bản, các phát biểu
+            lựa chọn, câu lệnh điều khiển, vòng lặp, mảng, con trỏ, kiểu cấu trúc. Bên cạnh đó khóa học cũng trang bị
+            cho học viên kiến thức xử lý tập tin, cách viết chương trình theo kiểu lập trình hàm, kỹ thuật tối ưu dòng
+            lệnh, tinh chỉnh mã nguồn để chương trình chạy nhanh hơn.
+        </p>
+    </div>
+
+    <!-- NỘI DUNG KHÓA HỌC -->
+    <div class="content3">
+        <h5>Nội dung khóa học</h5>
+        <hr>
+        <ul>
+            <li><b>Phần 1:Giới thiệu khóa học</b></li>
+            <li><b>Phần 2: Cấu trúc rẽ nhánh</b></li>
+            <li><b>Phần 3: Cấu trúc vòng lặp</b></li>
+            <li><b>Phần 4: Hàm - chương trình con</b></li>
+            <li><b>Phần 5: Kĩ thuật đệ quy</b></li>
+            <li><b>Phần 6: Mảng</b></li>
+            <li><b>Phần 7: Xử lí chuỗi</b></li>
+            <li><b>Phần 8: Con trỏ</b></li>
+        </ul>
+    </div>
+
+    <!-- THÔNG TIN GIẢNG VIÊN -->
+
+    <div class="content5">
+        <h5>Thông tin giảng viên</h5>
+        <hr>
+        <div class="item">
+            <div class="img">
+                <img src="/case/img/buivantan.png" alt="">
+                <div class="hv">
+                    <i class="fa-solid fa-users"></i>
+                    <p>100,000 học viên</p>
+                </div>
+                <div class="hv">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <p>10 khóa học</p>
+                </div>
+
+            </div>
+            <div class="item-content">
+                <h5>Nguyễn Thành Đạt</h5>
+                <p><i>Giảng viên</i></p>
+                <p>
+
+                    Giảng viên Nguyễn Thành Đạt - tốt nghiệp Thạc sĩ Khoa học máy tính tại Trường Đại học Kinh tế- Kĩ thuật Công nghiệp Hà Nội, có kinh nghiệm giảng dạy tại các trường:
+                    <br>
+                    Trường Đại học Kinh tế- Kĩ thuật Công nghiệp Hà Nội - phụ trách giảng dạy ứng dụng CNTT trong thư viện, xây
+                    dựng thư viện điện tử, thư viện số.
+                    <br>
+                    Trường Đại học Ngoại thương Hà Nội- công tác tại trung tâm phát triển phần mềm LSC và tham gia giảng dạy tại
+                    Khoa Khoa học Công nghệ, Trung tâm tin học.
+                    <br>
+                    Trường CĐ Nghề CNTT iSPACE (Quản lý bộ môn Kỹ thuật lập trình - Khoa Kỹ thuật phần mềm)
+                    <br>
+                    Giảng viên Đại học Gia Định, trường TCCN Hồng Hà, trường TC Thông tin truyền thông.
+                </p>
+            </div>
+        </div>
+    </div>
+
+            <!-- Khóa học khác -->
+            <div class="container1" id="study">
+                <h1 id="h1">Các khóa học khác</h1>
+                <div class="content4 swiper">
+        
+                    <div class="course swiper-wrapper">
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/nhapmonit.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Nhập môn lập trình</h1>
+                                <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/c++2.jpg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình C++ </h1>
+                                <p><span>Người dạy: </span>Nguyễn Trọng Bắc</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/reactJs.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình reactJs</h1>
+                                <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/design.jpg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Nhập môn lập trình</h1>
+                                <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/js.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình Js</h1>
+                                <p><span>Người dạy: </span>Khuất Thị Minh Anh</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/c++.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình C++</h1>
+                                <p><span>Người dạy: </span>Nguyễn Trí Dũng</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 3 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/html.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập tình web căn bản</h1>
+                                <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/python.jfif" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình Python</h1>
+                                <p><span>Người dạy: </span>Trần Quang Học</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 6 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/web.jpg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình web</h1>
+                                <p><span>Người dạy: </span>Vũ Thành Long</p>
+                                <p> <span>Hình thức:</span> Học online</p>
+                                <p><span>Thời gian:</span> 3 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/reactJs.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình reactJs</h1>
+                                <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/design.jpg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Khóa học thiết kế</h1>
+                                <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/js.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình Js</h1>
+                                <p><span>Người dạy: </span>Khuất Thị Minh Anh</p>
+                                <p> <span>Hình thức:</span> Học offline</p>
+                                <p><span>Thời gian:</span> 5 tháng</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev "></div> -->
+                    <div class="swiper-pagination check"></div>
+                </div>
+            </div>
+            <section class="contactx">
+                <div class="contentx">
+                    <h2>Liên hệ chúng tôi</h2>
+                    <p>Disclaimer video is for educational purpose only. Copyright Disclaimer 
+                       nder Section 107 of the Copyright Act 1976, allowance is made for "fair use" 
+                        for purposes such as criticism, comment, news reporting, teaching, 
+                        scholarship, and research. Fair use is a use permitted by copyright </p>
+                </div>
+                <div class="containerx">
+                    <div class="contactInfox">
+                        <div class="boxx">
+                            <div class="iconx"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="textx">
+                                <h3>Địa Chỉ</h3>
+                                <p>Số 218 Lĩnh Nam , Hoàng Mai , Hà Nội</p>
+                            </div>
+                        </div>
+        
+                        <div class="boxx">
+                            <div class="iconx"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="textx">
+                                <h3>Phone</h3>
+                                <p>888-999-7775</p>
+                            </div>
+                        </div>
+        
+                        <div class="boxx">
+                            <div class="iconx"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                            <div class="textx">
+                                <h3>Email</h3>
+                                <p>ITC@uneti.edu.vn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactFormx">
+                        <form>
+                            <h2>Send Message</h2>
+                            <div class="inputBoxx">
+                                <input type="text" name="" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBoxx">
+                                <input type="text" name="" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBoxx">
+                                <textarea required="required"></textarea>
+                                <span>Type your Message.....</span>
+                            </div>
+                            <div class="inputBoxx">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>    
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</body>
+<script src="./study.js"></script>
+</html>

@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu lạc bộ ITC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- BANNER -->
+    <header>
+        <div id="carouselExampleControls" class="carousel slide head" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="opacity" id="Change">
+                    <div class="header">
+                        <div class="img">
+                            <a href="./index.html">
+                                <img src="./img/logo_ITC.png" alt="">
+                            </a>
+
+                        </div>
+                        <div class="find">
+                            <input type="text" name="" id="infor" placeholder="Mời nhập thông tin muốn tìm kiếm...">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="form">
+                            <button onclick="nextPage2()">Đăng ký</button>
+                              <button onclick="nextPage()" >Đăng nhập</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item active content-item">
+                    <img src="./img/background.jpg" class="anh" alt="...">
+                    <div class="content">
+                        <h1>Triết lí clb</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia adipisci ex laboriosam
+                            numquam quis tenetur nob</p>
+                        <button>Xem thêm</button>
+                    </div>
+
+                </div>
+                <div class="carousel-item content-item">
+                    <img src="./img/2copy.jpg" class="anh" alt="...">
+                    <div class="content">
+                        <h1>nhóm tổ trực thuộc clb</h1>
+                        <p style="font-size: 1.3rem; ">Nhóm Thiết kế đồ họa &emsp; Nhóm Lập trình&emsp;Nhóm Quản trị mạng&emsp; Nhóm Thiết kế web&emsp;Nhóm tình nguyện ITVT</p>
+                        <button>Xem thêm</button>
+                    </div>
+
+
+                </div>
+                <div class="carousel-item content-item">
+                    <img src="./img/background.jpg" class="anh" alt="...">
+                    <div class="content">
+                        <h1>Triết lí clb</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia adipisci ex laboriosam
+                            numquam quis tenetur nob</p>
+                        <button>Xem thêm</button>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+        </div>
+    </header>
+
+    <!-- NAV BAR -->
+    <div class="nav-scroll" id="check">
+        <div class="header">
+            <div class="img">
+                <a href="./index.html">
+                    <img src="./img/logo_ITC.png" alt="">
+                </a>
+
+            </div>
+            <div class="find">
+                <input type="text" name="" id="infor" placeholder="Mời nhập thông tin muốn tìm kiếm...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="form">
+                <button onclick="nextPage2()" onclick="signIn()">Đăng ký</button>
+                <button onclick="nextPage()" onclick="signIn()">Đăng nhập</button>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="list" id="first">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list" id="two">
+                    <a href="#study">
+                        <span class="icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></span>
+                        <span class="title">Study</span>
+                    </a>
+                </li>
+                <li class="list" id="three">
+                    <a href="#even">
+                        <span class="icon"><i class="fa-solid fa-calendar-check"></i></span>
+                        <span class="title">Even</span>
+                    </a>
+                </li>
+                <li class="list" id="four">
+                    <a href="#blog" >
+                        <span class="icon"><i class="fa-solid fa-blog"></i></span>
+                        <span class="title">Blog</span>
+                    </a>
+                </li>
+                <li class="list" id="last">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-arrows-left-right"></i></span>
+                        <span class="title">horizontal</span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- VỀ CHÚNG TÔI -->
+    <div class="content1">
+        <h1>Về Chúng Tôi</h1>
+        <div class="item">
+            <div class="content1_item">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h1>Nhiệt huyết - Tận tâm</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, qui esse. Adipisci itaque quia iste. Si
+                </p>
+            </div>
+            <div class="content1_item">
+                <i class="fa-solid fa-star"></i>
+                <h1>Năng động - Sáng tạo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, qui esse. Adipisci itaque quia iste. Si
+                </p>
+            </div>
+            <div class="content1_item">
+                <i class="fa-solid fa-user"></i>
+                <h1>Trách nhiệm - Kỉ luật</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, qui esse. Adipisci itaque quia iste. Si
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- TIN NỔI BẬT -->
+ 
+    <div class="content3" id="blog">
+        <h1>Tin nổi bật</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./docbao/docbao.html">
+                        <div class="flex">
+                            <div class="img" style="flex-grow: 7;">
+                                <img src="./img/design.jpg" alt="">
+                            </div>
+                            <div class="item-content " style="flex-grow: 3;">
+                                <h1>Khóa học design chính thức bắt đầu</h1>
+                                <p><span>Người viết: </span>Khuất Duy Tiến</p>
+                                <p><span>Ngày đăng: </span>26/09/2022</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci rerum.
+                                    Sequi, totam quod. Quidem impedit eos porro, modi volupt Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Incidunt, sit earum! Dolore, minima quibusdam ea vel
+                                    nobis eius illo totam velit dignissimos, eveniet praesentium? Aut fuga fugiat harum
+                                    animi eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                                    adipisci rerum. Sequi, totam quod. Quidem impedit eos porro, modi volupt Lorem ipsum
+                                    dolor sit amet consectetur, adipisicing elit...
+                                <p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="carousel-item">
+                    <a href="./docbao/docbao.html">
+                        <div class="flex">
+                            <div class="img" style="flex-grow: 7;">
+                                <img src="./img/background.jpg" alt="">
+                            </div>
+                            <div class="item-content " style="flex-grow: 3;">
+                                <h1>Chương trình tri ân các anh hùng dân tộc</h1>
+                                <p><span>Người viết: </span>Nguyễn Trí Dũng</p>
+                                <p><span>Ngày đăng: </span>16/09/2022</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, adipisci rerum.
+                                    Sequi, totam quod. Quidem impedit eos porro, modi volupt Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Incidunt, sit earum! Dolore, minima quibusdam ea vel
+                                    nobis eius illo totam velit dignissimos, eveniet praesentium? Aut fuga fugiat harum
+                                    animi eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                                    adipisci rerum. Sequi, totam quod. Quidem impedit eos porro, modi volupt Lorem ipsum
+                                    dolor sit amet consectetur, adipisicing elit...
+                                <p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="carousel-item">
+                    <a href="./docbao/docbao.html">
+                        <div class="flex">
+
+                            <div class="img" style="flex-grow: 7;">
+                                <img src="./img/c++2.jpg" alt="">
+                            </div>
+
+                            <div class="item-content " style="flex-grow: 3;">
+                                <h1>Khóa học C++ chính thức được khởi động</h1>
+                                <p><span>Người viết: </span>Nguyễn Nhật Tân</p>
+                                <p><span>Ngày đăng: </span>26/06/2022</p>
+                                <p>repudiandae molesiciendis a doloribus deserunt maiores incidunt et aspernatur. rerum.
+                                    Sequi, totam quod. Quidem impedit eos porro, modi volupt Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit. Incidunt, sit earum! Dolore, minima quibusdam ea vel
+                                    nobis eius illo totam velit dignissimos, eveniet praesentium? Aut fuga fugiat harum
+                                    animi eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                                    adipisci rerum. Sequi, totam quod. Quidem impedit eos porro, modi volupt Lorem ipsum
+                                    dolor sit amet consectetur, adipisicing elit...
+                                <p>
+
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev btn2" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon btn2 color" aria-hidden="true"></span>
+                <span class="visually-hidden btn2">Previous</span>
+            </button>
+            <button class="carousel-control-next btn1" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon btn1 color" aria-hidden="true"></span>
+                <span class="visually-hidden ">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+    <!-- CÁC THÀNH VIÊN NỔI BẬT -->
+    <div class="content2 swiper mySwiper" >
+        <h1>Thành viên nổi bật</h1>
+        <div class="swiper-wrapper">
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="img">
+                        <img src="./img/anhtuan.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Anh Tuấn</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span>giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao</p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/huumanh.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Hữu Mạnh</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/huyentan.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Huyền Tân</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/nguyenloan.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Nguyễn Thị Loan</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/quanganh.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Quang Anh</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/quanghoc.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Quang Học</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/tiendat.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Thành Đạt</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img//thuynga.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Thúy Nga</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/duc.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Trần Văn Đức</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+            <div class="item swiper-slide">
+                <div class="infor">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="img">
+                        <img src="./img/anhtuan.png" alt="">
+                    </div>
+
+                </div>
+                <div class="item-content">
+                    <h3>Anh Tuấn</h3>
+                    <p><span>Lớp:</span> ĐHTI15A19HN</p>
+                    <p><span>Thành tích nổi bật:</span> giải nhất cuộc thi ABC,hoàn thành xuất sắc nhiệm vụ được giao
+                    </p>
+                    <button>Tìm hiểu thêm</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- KHÓA HỌC NỔI BẬT -->
+
+    <div class="container1" id="study">
+        <h1 id="h1">Các khóa học</h1>
+        <div class="content4 swiper">
+
+            <div class="course swiper-wrapper">
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/nhapmonit.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Nhập môn lập trình</h1>
+                        <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/c++2.jpg" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình C++ nâng cao</h1>
+                        <p><span>Người dạy: </span>Nguyễn Trọng Bắc</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/reactJs.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình reactJs</h1>
+                        <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/design.jpg" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Nhập môn lập trình</h1>
+                        <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/js.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình Js</h1>
+                        <p><span>Người dạy: </span>Khuất Thị Minh Anh</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/c++.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình C++</h1>
+                        <p><span>Người dạy: </span>Nguyễn Trí Dũng</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 3 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/html.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập tình web căn bản</h1>
+                        <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/python.jfif" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình Python</h1>
+                        <p><span>Người dạy: </span>Trần Quang Học</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 6 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/web.jpg" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình web</h1>
+                        <p><span>Người dạy: </span>Vũ Thành Long</p>
+                        <p> <span>Hình thức:</span> Học online</p>
+                        <p><span>Thời gian:</span> 3 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/reactJs.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình reactJs</h1>
+                        <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/design.jpg" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Khóa học thiết kế</h1>
+                        <p><span>Người dạy: </span>Trần Tiến Đạt</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/js.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <h1>Lập trình Js</h1>
+                        <p><span>Người dạy: </span>Khuất Thị Minh Anh</p>
+                        <p> <span>Hình thức:</span> Học offline</p>
+                        <p><span>Thời gian:</span> 5 tháng</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev "></div> -->
+            <div class="swiper-pagination check"></div>
+        </div>
+    </div>
+
+        <!-- CÁC CUỘC THI -->
+    <div class="container2" id="even" style="margin-top: 100px;">
+        <h1 id="h1">Các cuộc thi</h1>
+        <div class="content4 swiper">
+
+            <div class="course swiper-wrapper">
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/bongda.jfif" alt="">
+                        <img class="topic" src="./img/14ed5fa7ea292f777638-removebg.png" alt="">
+                        <p class="topic">Thể Thao</p>
+                    </div>
+                    <div class="item-content">
+                        <h1>Đại hội bóng đá ITC</h1>
+                        <p style="text-align: start;"><span>Thời gian: </span>22-30/09/2022</p>
+                        <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/caulong.jfif" alt="">
+                        <img class="topic" src="./img/14ed5fa7ea292f777638-removebg.png" alt="">
+                        <p class="topic">Thể Thao</p>
+                    </div>
+                    <div class="item-content">
+                        <h1>Đại hội cầu lông ITC</h1>
+                        <p style="text-align: start;"><span>Thời gian: </span>22-30/09/2022</p>
+                        <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/olympic.jpg" alt="">
+                        <img class="topic" src="./img/14ed5fa7ea292f777638-removebg.png" alt="">
+                        <p class="topic">Học thuật</p>
+                    </div>
+                    <div class="item-content">
+                        <h1>Cuộc thi Olympic Tin học</h1>
+                        <p style="text-align: start;"><span>Thời gian: </span>22-30/09/2022</p>
+                        <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipis</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/tiktok.jpg" alt="">
+                        <img class="topic" src="./img/14ed5fa7ea292f777638-removebg.png" alt="">
+                        <p class="topic">Văn hóa</p>
+                    </div>
+                    <div class="item-content">
+                        <h1>Cuộc thi Tiktok with ITC</h1>
+                        <p style="text-align: start;"><span>Thời gian: </span>22-30/09/2022</p>
+                        <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/thang11].jpg" alt="">
+                        <img class="topic" src="./img/14ed5fa7ea292f777638-removebg.png" alt="">
+                        <p class="topic">Học thuật</p>
+                    </div>
+                    <div class="item-content">
+                        <h1>Cuộc thi tháng 11 tri ân</h1>
+                        <p style="text-align: start;"><span>Thời gian: </span>22-30/09/2022</p>
+                        <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores </p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+                <div onclick="study()" class="card swiper-slide">
+                    <div class="img">
+                        <img src="./img/mua.jfif" alt="">
+                        <img class="topic" src="./img/14ed5fa7ea292f777638-removebg.png" alt="">
+                        <p class="topic">Thể Thao</p>
+                    </div>
+                    <div class="item-content">
+                        <h1>Cuộc thi múa ITC</h1>
+                        <p style="text-align: start;"><span>Thời gian: </span>22-30/09/2022</p>
+                        <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores </p>
+                        <button>Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev "></div> -->
+            <div class="swiper-pagination check"></div>
+        </div>
+    </div>
+
+    <!-- HOẠT ĐỘNG NỔI BẬT -->
+    <div id="hoatdong" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div style="text-align: center;"><h2 style="color: #2E75B6; ">Hoạt Động Nổi Bật</h2></div>
+        <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#hoatdong" data-bs-slide-to="0" class="active"></button>
+            <li type="button" data-bs-target="#hoatdong" data-bs-slide-to="1"></button>
+            <li type="button" data-bs-target="#hoatdong" data-bs-slide-to="2"></button>
+        </ol>
+    
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-interval="2000">
+                <img src="./img/night1.jpg" alt="Los Angeles" class="d-block" style=" width: 1522px;">           
+                <div class="pick-color"></div>
+
+                <div class="text-content">
+                    <h2 style="color: #f9f9fa;margin-top: 15px; font-size: 45px; text-transform: uppercase;">MUSIC</h2>
+                    <br>
+                    <h2 style="color: #fcfcfc; font-size: 16px; background: rgba(0, 0, 0, 0.1);width: 90%;
+                    padding: 10px;
+                    border-radius: 4px;">In this video, You will learn how to design a Responsive Image Slider(Slideshow / Carousel) 
+                        with Manual Navigation Buttons and Auto-Play Navigation functionalities only using pure javascript.
+                         In this Image Slider, you can add more images you want without changing any CSS styles because</h2>
+
+                        <div class="icon-text">
+                            <div class="icon1" style="display: flex; ">
+                                <div class="customi1"><i class="fa-solid fa-music"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">EDM</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Nightcore</h2>
+                                </div>
+                            </div>
+        
+                            <div class="icon2" style="display: flex;">
+                                <div class="customi1"><i class="fa-solid fa-music"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">DJ</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Remix</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-text">
+                            
+                            <div class="icon1" style="display: flex;">
+                                <div class="customi1"><i class="fa-solid fa-music"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">RAPPER</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Rap</h2>
+                                </div>
+                            </div>
+        
+                            <div class="icon2" style="display: flex;">
+                                <div class="customi1"><i class="fa-solid fa-music"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">LOFI-CHILL</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Nhạc Thư Giãn</h2>
+                                  </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-interval="2000">
+                <img src="./img/2.jfif" alt="Chicago" class="d-block" style="width: 1522px;">          
+                <div class="pick-color2"></div>
+                <div class="text-content2">
+                    <h2 style="color: #f9f9fa;margin-top: 15px; font-size: 45px; text-transform: uppercase;">SPORT</h2>
+                    <br>
+                    <h2 style="color: #fcfcfc; font-size: 16px; background: rgba(0, 0, 0, 0.1);width: 90%;
+                    padding: 10px;
+                    border-radius: 4px;">In this video, You will learn how to design a Responsive Image Slider(Slideshow / Carousel) 
+                        with Manual Navigation Buttons and Auto-Play Navigation functionalities only using pure javascript.
+                         In this Image Slider, you can add more images you want without changing any CSS styles because</h2>
+                        <div class="icon-text">
+                            <div class="icon1" style="display: flex; ">
+                                <div class="customi1"><i class="fa-solid fa-bicycle"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">Bicycle</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Đạp-Xe</h2>
+                                </div>
+                            </div>
+        
+                            <div class="icon2" style="display: flex;">
+                                <div class="customi1"><i class="fa-solid fa-circle-notch"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">GYM</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Cử Tạ</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="icon-text">
+                            <div class="icon1" style="display: flex; ">
+                                <div class="customi1"><i class="fa-solid fa-gamepad"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">ESPORTS</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Gaming</h2>
+                                </div>
+                            </div>
+        
+                            <div class="icon2" style="display: flex;">
+                                <div class="customi1"><i class="fa-regular fa-futbol"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">FOOTBALL</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Đá Bóng</h2>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-interval="2000">
+                <img src="./img/download (1).jfif" alt="New York" class="d-block" style=" width: 1522px;">             
+                <div class="pick-color3"></div>
+
+                <div class="text-content3">
+                    <h2 style="color: #f9f9fa;margin-top: 15px; font-size: 45px; text-transform: uppercase;">DANCE</h2>
+                    <br>
+                    <h2 style="color: #fcfcfc; font-size: 16px; background: rgba(0, 0, 0, 0.1);width: 90%;
+                    padding: 10px;
+                    border-radius: 4px;">In this video, You will learn how to design a Responsive Image Slider(Slideshow / Carousel) 
+                        with Manual Navigation Buttons and Auto-Play Navigation functionalities only using pure javascript.
+                         In this Image Slider, you can add more images you want without changing any CSS styles because</h2>
+
+                        <div class="icon-text">
+                            <div class="icon1" style="display: flex; ">
+                                <div class="customi1"><i class="fa-solid fa-circle-notch"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #eaece8; font-size: 24px;">Breakdance</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f5f8ef; font-size: 18px;">HipHop</h2>
+                                </div>
+                            </div>
+        
+                            <div class="icon2" style="display: flex;">
+                                <div class="customi1"><i class="fa-solid fa-gem"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">Popping</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Kỹ Năng</h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="icon-text">
+                            <div class="icon1" style="display: flex; ">
+                                <div class="customi1"><i class="fa-solid fa-diamond"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">Flashmob</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Nhảy Tập Thể</h2>
+                                </div>
+                            </div>
+        
+                            <div class="icon2" style="display: flex;">
+                                <div class="customi1"><i class="fa-solid fa-person-dots-from-line"></i></div>
+                                  <div style="display: flex;flex-direction: column;">
+                                    <h3 style="transform: translateY(30%); margin-left: 15px; color: #edeeec; font-size: 24px;">Shuffle Dance</h3>
+                                    <h2 style="transform: translateY(30%); margin-left: 15px; color: #f9faf9; font-size: 18px;">Nhảy Đường Phố</h2>
+                                  </div>
+                            </div>
+
+                        </div> 
+                </div>
+            </div>
+
+        </div>
+    
+    <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#hoatdong" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hoatdong" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+        <!-- CÁC THÀNH TÍCH NỔI BẬT -->
+        <div class="container3" id="study" style="margin-top: 100px;">
+            <h1 id="h1">Các thành tích nổi bật</h1>
+            <div class="content4 swiper">
+    
+                <div class="course swiper-wrapper">
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="./img/android.png" alt="">
+                            
+                        </div>
+                        <div class="item-content">
+                            <h1>Xây dựng ứng dụng Android</h1>
+                            <p style="text-align: start;"><span>Thành viên: </span>Khuất Duy Tiến, Nguyễn Trí Dũng, Khuất Hữu Long</p>
+                            <p style="text-align: start;"> <span>Giới thiệu chung: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                           
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="./img/laptrinhgame.jpg" alt="">
+                            
+                        </div>
+                        <div class="item-content">
+                            <h1>Lập trình game nuôi cá</h1>
+                            <p style="text-align: start;"><span>Thành viên: </span>Khuất Duy Tiến, Nguyễn Trí Dũng, Khuất Hữu Long</p>
+                            <p style="text-align: start;"> <span>Giới thiệu chung: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                           
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="./img/web-quan-ly-nhan-su-1.jpg" alt="">
+                            
+                        </div>
+                        <div class="item-content">
+                            <h1>Xây dựng ứng dụng quản lí nhân sự</h1>
+                            <p style="text-align: start;"><span>Thành viên: </span>Khuất Duy Tiến, Nguyễn Trí Dũng, Khuất Hữu Long</p>
+                            <p style="text-align: start;"> <span>Giới thiệu chung: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                           
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="./img/download (2).jfif" alt="">
+                            
+                        </div>
+                        <div class="item-content">
+                            <h1>Xây dựng web bán hàng</h1>
+                            <p style="text-align: start;"><span>Thành viên: </span>Khuất Duy Tiến, Nguyễn Trí Dũng, Khuất Hữu Long</p>
+                            <p style="text-align: start;"> <span>Giới thiệu chung: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                           
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="./img/mangdulieu.jpg" alt="">
+                            
+                        </div>
+                        <div class="item-content">
+                            <h1>Phát triển ứng dụng kết nối đa phương tiện</h1>
+                            <p style="text-align: start;"><span>Thành viên: </span>Khuất Duy Tiến, Nguyễn Trí Dũng, Khuất Hữu Long</p>
+                            <p style="text-align: start;"> <span>Giới thiệu chung: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores</p>
+                           
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev "></div> -->
+                <div class="swiper-pagination check"></div>
+            </div>
+        </div>
+
+
+
+     <!-- FOOTER -->
+     <section class="contactx">
+        <div class="contentx">
+            <h2>Liên hệ chúng tôi</h2>
+            <p>Disclaimer video is for educational purpose only. Copyright Disclaimer 
+               nder Section 107 of the Copyright Act 1976, allowance is made for "fair use" 
+                for purposes such as criticism, comment, news reporting, teaching, 
+                scholarship, and research. Fair use is a use permitted by copyright </p>
+        </div>
+        <div class="containerx">
+            <div class="contactInfox">
+                <div class="boxx">
+                    <div class="iconx"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="textx">
+                        <h3>Địa Chỉ</h3>
+                        <p>Số 218 Lĩnh Nam , Hoàng Mai , Hà Nội</p>
+                    </div>
+                </div>
+
+                <div class="boxx">
+                    <div class="iconx"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="textx">
+                        <h3>Phone</h3>
+                        <p>888-999-7775</p>
+                    </div>
+                </div>
+
+                <div class="boxx">
+                    <div class="iconx"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="textx">
+                        <h3>Email</h3>
+                        <p>ITC@uneti.edu.vn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactFormx">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBoxx">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBoxx">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBoxx">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message.....</span>
+                    </div>
+                    <div class="inputBoxx">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+<script src="./index.js"></script>
+
+
+
+</html>

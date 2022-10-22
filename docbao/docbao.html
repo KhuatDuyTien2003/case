@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./docbao.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="nav-scroll" id="check">
+        <div class="header">
+            <div class="img">
+                <a href="/case/index.html">
+                    <img src="/case/img/logo_ITC.png" alt="">
+                </a>
+                
+
+            </div>
+            <div class="find">
+                <input type="text" name="" id="infor" placeholder="Mời nhập thông tin muốn tìm kiếm...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="form">
+                <button onclick="nextPage2()" onclick="signIn()">Đăng ký</button>
+                <button onclick="nextPage()" onclick="signIn()">Đăng nhập</button>
+            </div>
+        </div>
+        <!-- <div class="nav">
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#study">
+                        <span class="icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></span>
+                        <span class="title">Study</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-calendar-check"></i></span>
+                        <span class="title">Even</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#content3">
+                        <span class="icon"><i class="fa-solid fa-blog"></i></span>
+                        <span class="title">Blog</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-arrows-left-right"></i></span>
+                        <span class="title">horizontal</span>
+
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    <div class="container1">
+        <p id="link"><a href="/case/index.html">Trang chủ</a> >> <a href="#">Đọc báo</a></p>
+        <h1>Khóa học C++ chính được khởi động</h1>
+        <div class="date">
+            <p>Thứ Năm, ngày 13/10/2022 19:00 PM (GMP +7)</p>
+            <button><i class="fa-solid fa-share"></i> Chia sẻ</button>
+        </div>
+        <div class="body">
+            <p>Khóa học lập trình C/C++ Online bạn trang bị cho bạn kỹ năng lập trình ngôn ngữ C/ C++ từ cơ bản đến nâng
+                cao, được minh họa thông qua các bài tập thực hành đơn giản. Đồng thời giúp bạn nắm được kiến thức nền
+                tảng học C++/C để bạn tiếp tục học thêm nhiều ngôn ngữ khác.</p>
+            <img src="/case/img/c++2.jpg" alt="">
+            <p id="time">Thời gian khóa học bắt đầu</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi tempore laudantium quidem,
+                dignissimos ullam culpa veniam temporibus sit fuga at voluptatibus fugiat error quibusdam commodi iure
+                in exercitationem fugit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, consequuntur cumque culpa ullam nam
+                perferendis laudantium quidem, eos optio vitae vero accusamus reprehenderit ab dolor voluptatem delectus
+                voluptas debitis eius?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus commodi. Ullam eos cupiditate
+                deserunt ex quos laudantium deleniti quaerat magnam quibusdam dolor? Nostrum nam eos atque velit
+                deserunt fugiat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat necessitatibus expedita cumque
+                rem commodi explicabo id animi sint aut, nostrum omnis at et nulla, repellendus, maiores tempore
+                accusantium architecto!
+            </p>
+            <img src="/case/img/hocc.jpg" alt="">
+            <p id="time">Lớp học C++ tại cơ sở Nam Định</p>
+            <img src="/case/img/hoccc.jpg" alt="">
+            <p id="time">Lớp học C++ tại cơ sở Hà Nội</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi tempore laudantium quidem,
+                dignissimos ullam culpa veniam temporibus sit fuga at voluptatibus fugiat error quibusdam commodi iure
+                in exercitationem fugit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, consequuntur cumque culpa ullam nam
+                perferendis laudantium quidem, eos optio vitae vero accusamus reprehenderit ab dolor voluptatem delectus
+                voluptas debitis eius?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloribus commodi. Ullam eos cupiditate
+                deserunt ex quos laudantium deleniti quaerat magnam quibusdam dolor? Nostrum nam eos atque velit
+                deserunt fugiat?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat necessitatibus expedita cumque
+                rem commodi explicabo id animi sint aut, nostrum omnis at et nulla, repellendus, maiores tempore
+                accusantium architecto!
+            </p>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="content2">
+        <p id="title">Bài viết có liên quan</p>
+        <div class="container2" id="study">
+            <div class="content4 swiper mySwiper">
+                <div class="course swiper-wrapper">
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/nhapmonit.png" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Nhập môn lập trình</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/c++2.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Nhập môn lập trình</h1>
+
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/reactJs.png" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Nhập môn lập trình</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/design.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Nhập môn lập trình</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/js.png" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Lập trình Js</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/c++.png" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Lập trình C++</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/html.png" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Lập tình web căn bản</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/python.jfif" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Lập trình Python</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                    </div>
+                    <div onclick="study()" class="card swiper-slide">
+                        <div class="img">
+                            <img src="/case/img/web.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h1>Lập trình web</h1>
+                            <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                            <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Asperiores</p>
+                            <button>Xem thêm</button>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/reactJs.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình reactJs</h1>
+                                <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                                <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Asperiores</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/design.jpg" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Khóa học thiết kế</h1>
+                                <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                                <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Asperiores</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+                        <div onclick="study()" class="card swiper-slide">
+                            <div class="img">
+                                <img src="/case/img/js.png" alt="">
+                            </div>
+                            <div class="item-content">
+                                <h1>Lập trình Js</h1>
+                                <p style="text-align: start;"><span>Ngày đăng: </span>30/09/2022</p>
+                                <p style="text-align: start;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Asperiores</p>
+                                <button>Xem thêm</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+                <!-- BÌNH LUẬN -->
+        <div class="comment">
+            <p id="title2">BÌNH LUẬN</p>
+            <div class="form">
+                <textarea name="" id="" cols="150" rows="3" placeholder="Viết bình luận của bạn "></textarea>
+            <button>Gửi bình luận</button>
+            </div>
+            <div class="comment-item">
+                <div class="img">
+                    <img src="/case/img/anhtuan.png" alt="">
+                </div>
+                
+                <div class="content">
+                    <p id="name">Duy Tiến</p>
+                    <p id="nd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam velit delectus tenetur assumenda quaerat excepturi non m</p>
+                </div>
+               
+            </div>
+            <div class="reaction">
+                <div class="react">
+                     <div class="content2">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>3</p>
+                    </div>
+                    <div class="content2">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>Trả lời</p>
+                    </div>
+                </div>     
+                  <p id="tg">5 giờ trước</p>
+
+            </div>
+            <div class="comment-item">
+                <div class="img">
+                    <img src="/case/img/anhtuan.png" alt="">
+                </div>
+                
+                <div class="content">
+                    <p id="name">Duy Tiến</p>
+                    <p id="nd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam velit delectus tenetur assumenda quaerat excepturi non m</p>
+                </div>
+               
+            </div>
+            <div class="reaction">
+                <div class="react">
+                     <div class="content2">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>3</p>
+                    </div>
+                    <div class="content2">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>Trả lời</p>
+                    </div>
+                </div>     
+                  <p id="tg">5 giờ trước</p>
+
+            </div>
+            <div class="comment-item">
+                <div class="img">
+                    <img src="/case/img/anhtuan.png" alt="">
+                </div>
+                
+                <div class="content">
+                    <p id="name">Duy Tiến</p>
+                    <p id="nd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quam velit delectus tenetur assumenda quaerat excepturi non m</p>
+                </div>
+               
+            </div>
+            <div class="reaction">
+                <div class="react">
+                     <div class="content2">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>3</p>
+                    </div>
+                    <div class="content2">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>Trả lời</p>
+                    </div>
+                </div>     
+                  <p id="tg">5 giờ trước</p>
+
+            </div>
+        </div>
+
+                <!-- FOOTER -->
+                <section class="contactx">
+                    <div class="contentx">
+                        <h2>Liên hệ chúng tôi</h2>
+                        <p>Disclaimer video is for educational purpose only. Copyright Disclaimer 
+                           nder Section 107 of the Copyright Act 1976, allowance is made for "fair use" 
+                            for purposes such as criticism, comment, news reporting, teaching, 
+                            scholarship, and research. Fair use is a use permitted by copyright </p>
+                    </div>
+                    <div class="containerx">
+                        <div class="contactInfox">
+                            <div class="boxx">
+                                <div class="iconx"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                <div class="textx">
+                                    <h3>Địa Chỉ</h3>
+                                    <p>Số 218 Lĩnh Nam , Hoàng Mai , Hà Nội</p>
+                                </div>
+                            </div>
+            
+                            <div class="boxx">
+                                <div class="iconx"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                <div class="textx">
+                                    <h3>Phone</h3>
+                                    <p>888-999-7775</p>
+                                </div>
+                            </div>
+            
+                            <div class="boxx">
+                                <div class="iconx"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                <div class="textx">
+                                    <h3>Email</h3>
+                                    <p>ITC@uneti.edu.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactFormx">
+                            <form>
+                                <h2>Send Message</h2>
+                                <div class="inputBoxx">
+                                    <input type="text" name="" required="required">
+                                    <span>Full Name</span>
+                                </div>
+                                <div class="inputBoxx">
+                                    <input type="text" name="" required="required">
+                                    <span>Email</span>
+                                </div>
+                                <div class="inputBoxx">
+                                    <textarea required="required"></textarea>
+                                    <span>Type your Message.....</span>
+                                </div>
+                                <div class="inputBoxx">
+                                    <input type="submit" name="" value="Send">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>        
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+<script src="./docbao.js"></script>
+
+</html>
